@@ -1,40 +1,44 @@
 # 🎬 IMDb Sentiment Analysis
 
-Цей проєкт — система автоматичної класифікації рецензій на фільми як **позитивні** або **негативні**. Він поєднує класичні машинні методи (TF-IDF + Logistic Regression) з сучасними нейронними підходами (BERT).
+This project develops an automated system for classifying movie reviews as **positive** or **negative**, leveraging both classical machine learning techniques (TF-IDF + Logistic Regression) and modern neural approaches (BERT).
 
 ---
 
-## 🧠 Мета
+## 🧠 Objective
 
-Розробити повний pipeline для аналізу тональності:
-- Очистка та препроцесинг тексту
-- Побудова моделей на базі TF-IDF, Word2Vec, BERT
-- Порівняння моделей за якістю класифікації
-- Інтерактивний інтерфейс для передбачення на нових рецензіях
+To build a comprehensive pipeline for sentiment analysis, including:
+- Text cleaning and preprocessing
+- Model development using TF-IDF, Word2Vec, and BERT
+- Comparative evaluation of model performance
+- An interactive interface for predicting sentiment on new reviews
 
 ---
 
-## 📁 Структура проєкту.
-├── data/ # Дані (raw/processed)
-├── notebooks/ # EDA, експерименти
-├── src/ # Препроцесинг, тренування, інференс
-├── models/ # Збережені моделі
-├── app/ # Streamlit-додаток
-├── requirements.txt # Залежності
-├── .gitignore
-└── README.md## 
+## 📁 Project Structure
+```
+├── data/                 # Raw and processed datasets
+├── notebooks/            # Exploratory Data Analysis (EDA) and experiments
+├── src/                  # Code for preprocessing, training, and inference
+├── models/               # Saved model files
+├── app/                  # Streamlit web application
+├── requirements.txt      # Project dependencies
+├── .gitignore            # Git ignore file
+└── README.md             # Project documentation
+```
 
-💻 Використані технології
+---
 
-### 🧰 Мови та бібліотеки
-- **Python 3.8+**
-- **pandas**, **numpy** — робота з даними
-- **scikit-learn** — моделі машинного навчання
-- **nltk**, **beautifulsoup4** — очищення тексту
-- **matplotlib**, **seaborn** — візуалізація
-- **joblib** — збереження моделей
-- **gensim** — Word2Vec
-- **transformers**, **torch** — BERT-модель
-- **streamlit** — простий веб-інтерфейс
+## 💻 Technologies Used
+
+### 🧰 Languages and Libraries
+- **Python 3.8+**  
+- **pandas**, **numpy** — Data manipulation and analysis  
+- **scikit-learn** — Classical machine learning models  
+- **nltk**, **beautifulsoup4** — Text preprocessing and cleaning  
+- **matplotlib**, **seaborn** — Data visualization  
+- **joblib** — Model serialization  
+- **gensim** — Word2Vec for word embeddings  
+- **transformers**, **torch** — BERT for deep learning-based sentiment analysis  
+- **streamlit** — Interactive web interface for model inference  
 
 ---
